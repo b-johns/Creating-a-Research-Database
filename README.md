@@ -1,2 +1,4 @@
 # Creating-a-Research-Database
-Concise, easily-deployable SQLite databases created in python can be used to support all sorts of storage and querying needs. In this example, I create a modest, 21-table database to store post-secondary transcript, demographic, and transfer data that can be used to better understand student outcomes and identify special cohorts for further modeling.
+This small, 21-table, easily-deployable database is designed to read in and store transcript, demographic, and transfer data on college students. Its most basic use case is to identify analytical cohorts of students with particular traits (e.g. first time in college) for further modeling and study. Other use cases include querying to produce basic descriptive results about different student populations.
+
+In the python script, the phrase "frozen files" refers to sets of flat file extracts (.csv in this case) from a database, each of which represents the database at a particular moment in time. A concise database program like this can read in such extracts and begin knittting together a coherent picture of these education data over time.
